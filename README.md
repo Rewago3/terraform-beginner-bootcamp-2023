@@ -126,6 +126,5 @@ If it is successful you shouls see a json payload return that looks like this:
     "Arn": "arn:aws:iam::123456789012:user/test-b-bootcamp"
 }
 
-We will need to generate AWS Credentials from AWS IAM user in order to the user AWS CLI
-
 ```
+We will need to generate AWS Credentials from AWS IAM user in order to the user AWS CLI
