@@ -152,12 +152,15 @@ We can output this changeset ie. "plan" to be passed to an apply, but often you 
 `terraform apply`
 This will run a plan and pass the changeset to be executed by terraform. Apply should prompt us "yes or no"
 If we want to automatically approve an apply we can provide the auto approve flag eg. `terraform apply --auto-approve`
+#### Terraform Destroy
+`terrraform destroy`
+This will destroy resources.
 
-### Terraform Lock Files
+#### Terraform Lock Files
 `terraform.lock.hcl` contains the locked versions of providers or modules that should be used with this project.
 The terraform lock file **should be commited** to version control system(VCS). eg. Github
 
-### Terraform State Files
+#### Terraform State Files
 `terraform.tfstate` contains information about he current state of your infrastructure. 
 This file **should not be commited** to your VCS.
 This file contains sensitive data. If you lse ths file you lose knowing the state of your infrastructure.
