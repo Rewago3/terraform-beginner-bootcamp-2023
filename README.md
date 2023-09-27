@@ -186,11 +186,14 @@ Provide the following code.(replace your token in the file)
 {
   "credentials": {
     "app.terraform.io": {
-      "token": "F2aaIh5eOhAYcc.atlasv1.7775NOPEzo82qN88elI0qgbcyu3Jr0N4rluUqzIHEgsNf5uRxPfJ7DiV3QzwEXoNOPE"
+      "token": "SECRET_TERRAFORM_CLOUD_TOKEN"
     }
   }
 }
 ```
+
+We have automated this workaround with the following bash script.[bin/generate_tfrc_credentials](bin/generate_tfrc_credentials)
+
 
 
 
