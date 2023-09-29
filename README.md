@@ -1,6 +1,12 @@
 # Terraform Beginner Bootcamp 2023
 
-## Semantic Versioning `:mage:`
+## Table of Content
+
+- [Semantic Versioning](#semantic-versioning)
+- [Install the Terraform CLI](#install-the-terraform-cli)
+  - [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
+  -
+## Semantic Versioning
 
 This project is going to use semantic versioning for tagging.
 [semver.org](https://semver.org/)
@@ -14,7 +20,7 @@ Additional labels for pre-release and build metadata are available as extensions
 
 ## Install the Terraform CLI
 
-### Connsiderations with the Terraform CLI changes
+### Considerations with the Terraform CLI changes
 The Terraform installation instructions have changed due to gpg key ring changes. So referred to the latest Install CLI instructions via Terraform documentation and chage the scripts for install.
 [Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
