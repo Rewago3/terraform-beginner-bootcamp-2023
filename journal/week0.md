@@ -8,14 +8,14 @@
     + [Shebang](#shebang)
     + [Execution Considerations](#execution-considerations)
     + [Linux Permission Considerations](#linux-permission-considerations)
-  * [GitHub Lifecycle(Before, Init,Command)](#github-lifecycle-before--init-command-)
-  * [Working with Env Vars](#working-with-env-vars)
-    + [env command](#env-command)
-    + [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
-    + [Printing Vars](#printing-vars)
+- [Using gitpods commands Before init Command](#using-gitpods-commands-before-init-command)
+- [Working with Env Vars](#working-with-env-vars)
+  * [env command](#env-command)
+  * [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
+  * [Printing Vars](#printing-vars)
   * [Scoping of Env Vars](#scoping-of-env-vars)
     + [Persisiting Env Vars in Gitpod](#persisiting-env-vars-in-gitpod)
-  * [AWS CLI installation](#aws-cli-installation)
+- [AWS CLI installation](#aws-cli-installation)
 - [Terraform Basics](#terraform-basics)
   * [Terraform Registry](#terraform-registry)
   * [Terraform Console](#terraform-console)
@@ -25,8 +25,13 @@
     + [Terraform Destroy](#terraform-destroy)
     + [Terraform Lock Files](#terraform-lock-files)
     + [Terraform State Files](#terraform-state-files)
-  * [Terraform Directory ie.(Folder)](#terraform-directory-ie-folder-)
+  * [Terraform Directory ie.Folder](#terraform-directory-iefolder)
 - [Issues with Terraform Cloud Login and GitPod Workspace](#issues-with-terraform-cloud-login-and-gitpod-workspace)
+
+
+
+
+
 
 ## Semantic Versioning
 
@@ -99,15 +104,15 @@ chmod 744 ./bin/install_terraform_cli
 ```
 https://en.wikipedia.org/wiki/Chmod
 
-### GitHub Lifecycle(Before, Init,Command)
+## Using gitpods commands Before init Command
 We need to be careful in using the Init, because it will not rerun if we start a existing workspace.
 https://www.gitpod.io/docs/configure/workspaces/tasks
 
-### Working with Env Vars
-#### env command
+## Working with Env Vars
+### env command
 We can list out all Environment Variables(Env Vars) using the `env` command.
 We can filter out specific env var using grep eg. `env | grep AWS_`
-#### Setting and Unsetting Env Vars
+### Setting and Unsetting Env Vars
 In the terminal we can set using `export HELLO=world`
 In the terminal we can unset using `unset HELLO`
 
@@ -122,7 +127,7 @@ HELLO='world'
 echo $HELLO
 ```
 
-#### Printing Vars
+### Printing Vars
 We can print an env var using echo eg. `echo $HELLO`
 
 ### Scoping of Env Vars
@@ -136,7 +141,7 @@ gp env HELLO='world'
 ```
 All future workspaces launched will set the env vars for all bash terminals opened in those workspaces.
 You can also set env vars in the `.gitpod.yml`, but this can contain oly non-sensitive env vars.
-### AWS CLI installation
+## AWS CLI installation
 AWS CLI is nstalled for this project via the bash script [`./bin/install_aws_cli`](./bin/install_aws_cli)
 [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
@@ -194,7 +199,7 @@ This file **should not be commited** to your VCS.
 This file contains sensitive data. If you lse ths file you lose knowing the state of your infrastructure.
 `terraform.tfstate.backup` is the prvious state file.
 
-### Terraform Directory ie.(Folder)
+### Terraform Directory ie.Folder
 `.terraform` contains binaries of terraform providers 
 
 ## Issues with Terraform Cloud Login and GitPod Workspace
