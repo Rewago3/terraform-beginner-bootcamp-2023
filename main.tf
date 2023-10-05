@@ -1,4 +1,23 @@
 terraform {
+  #backend "remote" {
+  #  hostname = "app.terraform.io"
+  #  organization = "Gaddereva"
+
+  #  workspaces {
+  #    name = "terra-house-1"
+  #  }
+  #}
+  cloud {
+    organization = "Gaddereva"
+    workspaces {
+      name = "terraform-cloud1"
+    }
+  }
+}
+
+
+
+terraform {
 }
 module "terrahouse_aws" {
   source = "./modules/terrahouse_aws"

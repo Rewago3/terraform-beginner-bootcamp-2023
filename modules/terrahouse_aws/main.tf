@@ -1,14 +1,6 @@
+
 terraform {
-
-#   cloud {
-#     organization = "Gaddereva"
-
-#     workspaces {
-#       name = "terra_house_1"
-#     }
-#   }
   required_providers {
-    
     aws = {
       source = "hashicorp/aws"
       version = "5.17.0"
@@ -18,6 +10,16 @@ terraform {
 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity
 data "aws_caller_identity" "current" {}
+  
+#   required_providers {
+    
+#     aws = {
+#       source = "hashicorp/aws"
+#       version = "5.17.0"
+#     }
+#   }
+# }
+
 
 
   
@@ -27,13 +29,13 @@ data "aws_caller_identity" "current" {}
 #   # Configuration options
 # }
 
-resource "aws_s3_bucket" "website_bucket" {
-  bucket = var.bucket_name
+# resource "aws_s3_bucket" "website_bucket" {
+#   bucket = var.bucket_name
 
-  tags = {
-   UserUuid = var.user_uuid
-  }
-}
+#   tags = {
+#    UserUuid = var.user_uuid
+#   }
+# }
 # # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_website_configuration
 # resource "aws_s3_bucket_website_configuration" "website_configuration" {
 #   bucket = aws_s3_bucket.website_bucket.bucket
