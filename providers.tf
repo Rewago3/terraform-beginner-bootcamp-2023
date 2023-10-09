@@ -1,4 +1,4 @@
-terraform {
+#terraform {
 
 #   cloud {
 #     organization = "Gaddereva"
@@ -7,18 +7,18 @@ terraform {
 #       name = "terra_house_1"
 #     }
 #   }
-  required_providers {
+#   required_providers {
     
-    aws = {
-      source = "hashicorp/aws"
-      version = "5.17.0"
-    }
-  }
-}
+#     aws = {
+#       source = "hashicorp/aws"
+#       version = "5.17.0"
+#     }
+#   }
+# }
 
 
 
 
-provider "aws" {
-  # Configuration options
-}
+# provider "aws" {
+#   # Configuration options
+# }
