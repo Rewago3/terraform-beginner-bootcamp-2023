@@ -65,11 +65,14 @@ module "home_desifoods_hosting" {
 }
 
 resource "terratowns_home" "home_desifood" {
-  name = "Dosa Recipe"
+  name = "South Indian Cuisine"
   description = <<DESCRIPTION
-Since I really like Dosa, here is a recipe of how to make dosa from scratch.
+Prominent dishes: Generally speaking, South Indian cooking is based around rice, 
+lentils, and stews. Dishes such as dosa (a lentil and rice crêpe), 
+idli (steamed lentil rice cakes), saaru/rasam (tomato, tamarind, and lentil soup), 
+and huli/sambar (spicy lentil and vegetable stew) are all from the South.
 DESCRIPTION
   domain_name = module.home_desifoods_hosting.domain_name
-  town = "missingo"
+  town = "cooker-cove"
   content_version = var.desifoods.content_version
 }
